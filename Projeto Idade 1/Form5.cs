@@ -114,9 +114,18 @@ namespace Projeto_Idade_1
                 if (formsValidar) txtSenha.Focus();
                 formsValidar = false;
             }
+            else if (txtSenha.Text.Length < 10)
+            {
+                lblSenha.Text = "A senha deve ter no mínimo 10 caracteres";
+                lblSenha.Visible = true;
+                lblAsteriscoSenha.Visible = false;
+                if (formsValidar) txtSenha.Focus();
+                formsValidar = false;
+            }
+
             else if (!ValidarSenha(txtSenha.Text))
             {
-                lblSenha.Text = "Mínimo 10 caracteres e apenas números e símbolos";
+                lblSenha.Text = "A senha deve conter apenas números e símbolos";
                 lblSenha.Visible = true;
                 lblAsteriscoSenha.Visible = false;
                 if (formsValidar) txtSenha.Focus();
@@ -159,6 +168,7 @@ namespace Projeto_Idade_1
                     "Erro de Validação",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error);
+                return;
 
                 if (formsValidar) maskedTxtTelefone.Focus();
                 formsValidar = false;
@@ -327,7 +337,7 @@ namespace Projeto_Idade_1
         private bool ValidarSenha(string senha)
         {
             // Apenas números e caracteres especiais, mínimo 10
-            string padrao = @"^[0-9!@#$%^&*()_+\-=\[\]{};':""\\|,.<>/?]{10,}$";
+            string padrao = @"^[0-9!@#$%^&*()_+\-=\[\]{};':""\\|,.<>/?]{10}$";
             return Regex.IsMatch(senha, padrao);
         }
 

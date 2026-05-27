@@ -291,6 +291,7 @@
             // txtSenha
             // 
             this.txtSenha.Location = new System.Drawing.Point(322, 51);
+            this.txtSenha.MaxLength = 10;
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(240, 21);
             this.txtSenha.TabIndex = 12;
@@ -299,6 +300,7 @@
             // txtConfirmarSenha
             // 
             this.txtConfirmarSenha.Location = new System.Drawing.Point(322, 116);
+            this.txtConfirmarSenha.MaxLength = 10;
             this.txtConfirmarSenha.Name = "txtConfirmarSenha";
             this.txtConfirmarSenha.Size = new System.Drawing.Size(240, 21);
             this.txtConfirmarSenha.TabIndex = 14;
