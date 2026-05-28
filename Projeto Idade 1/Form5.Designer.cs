@@ -90,6 +90,7 @@
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(335, 21);
             this.txtNome.TabIndex = 1;
+            this.txtNome.TextChanged += new System.EventHandler(this.txtNome_TextChanged);
             this.txtNome.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNome_KeyPress);
             // 
             // label1
@@ -170,6 +171,7 @@
             this.cbGenero.Name = "cbGenero";
             this.cbGenero.Size = new System.Drawing.Size(162, 23);
             this.cbGenero.TabIndex = 11;
+            this.cbGenero.SelectedIndexChanged += new System.EventHandler(this.cbGenero_SelectedIndexChanged);
             // 
             // txtEndereço
             // 
@@ -443,6 +445,7 @@
             this.maskedTxtCPF.Name = "maskedTxtCPF";
             this.maskedTxtCPF.Size = new System.Drawing.Size(226, 21);
             this.maskedTxtCPF.TabIndex = 50;
+            this.maskedTxtCPF.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTxtCPF_MaskInputRejected);
             // 
             // maskedTxtTelefone
             // 
@@ -451,6 +454,7 @@
             this.maskedTxtTelefone.Name = "maskedTxtTelefone";
             this.maskedTxtTelefone.Size = new System.Drawing.Size(169, 21);
             this.maskedTxtTelefone.TabIndex = 49;
+            this.maskedTxtTelefone.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTxtTelefone_MaskInputRejected);
             // 
             // lblAsteriscoCPF
             // 

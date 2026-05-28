@@ -162,17 +162,19 @@ namespace Projeto_Idade_1
             }
 
             // TELEFONE
+
             if (!ValidarTelefone(maskedTxtTelefone.Text))
             {
-                MessageBox.Show("Por favor, informe um telefone válido",
-                    "Erro de Validação",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Error);
-                return;
-
                 if (formsValidar) maskedTxtTelefone.Focus();
                 formsValidar = false;
+
+                maskedTxtTelefone.BackColor = Color.LightCoral;
             }
+            else
+            {
+                maskedTxtTelefone.BackColor = Color.White;
+            }
+
 
             // Validando todos os campos
             if (formsValidar)
@@ -286,6 +288,7 @@ namespace Projeto_Idade_1
             // Limpa campos
             txtNome.Clear();
             maskedTxtTelefone.Clear();
+            maskedTxtTelefone.BackColor = Color.White;
             maskedTxtCPF.Clear();
             txtCEP.Clear();
             txtComplemento.Clear();
@@ -359,6 +362,26 @@ namespace Projeto_Idade_1
             {
                 e.Handled = true;
             }
+        }
+
+        private void txtNome_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void maskedTxtTelefone_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void maskedTxtCPF_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void cbGenero_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
