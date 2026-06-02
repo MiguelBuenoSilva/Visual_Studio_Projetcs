@@ -57,5 +57,11 @@ namespace Projeto_Idade_1
             Form5 tela = new Form5();
             tela.Show();
         }
+
+        private void seleçãoBrasileiraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Selecao_Brasileira tela = new Selecao_Brasileira();
+            tela.Show();
+        }
     }
 }
