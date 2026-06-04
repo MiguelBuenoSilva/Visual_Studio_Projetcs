@@ -46,9 +46,10 @@
             // 
             // txtNome
             // 
+            this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNome.Location = new System.Drawing.Point(122, 127);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(239, 20);
+            this.txtNome.Size = new System.Drawing.Size(239, 24);
             this.txtNome.TabIndex = 0;
             this.txtNome.TextChanged += new System.EventHandler(this.txtNome_TextChanged);
             // 
@@ -82,6 +83,7 @@
             this.cmbPosicao.Name = "cmbPosicao";
             this.cmbPosicao.Size = new System.Drawing.Size(121, 21);
             this.cmbPosicao.TabIndex = 3;
+            this.cmbPosicao.SelectedIndexChanged += new System.EventHandler(this.cmbPosicao_SelectedIndexChanged);
             // 
             // lblIdade
             // 
@@ -107,7 +109,7 @@
             // 
             this.btnConvocar.Location = new System.Drawing.Point(54, 347);
             this.btnConvocar.Name = "btnConvocar";
-            this.btnConvocar.Size = new System.Drawing.Size(145, 23);
+            this.btnConvocar.Size = new System.Drawing.Size(189, 23);
             this.btnConvocar.TabIndex = 6;
             this.btnConvocar.Text = "Convocar";
             this.btnConvocar.UseVisualStyleBackColor = true;
@@ -117,7 +119,7 @@
             // 
             this.btnEspera.Location = new System.Drawing.Point(366, 347);
             this.btnEspera.Name = "btnEspera";
-            this.btnEspera.Size = new System.Drawing.Size(161, 23);
+            this.btnEspera.Size = new System.Drawing.Size(218, 23);
             this.btnEspera.TabIndex = 7;
             this.btnEspera.Text = "&Espera";
             this.btnEspera.UseVisualStyleBackColor = true;
@@ -126,25 +128,25 @@
             // lstConvocar
             // 
             this.lstConvocar.FormattingEnabled = true;
-            this.lstConvocar.Location = new System.Drawing.Point(38, 382);
+            this.lstConvocar.Location = new System.Drawing.Point(25, 395);
             this.lstConvocar.Name = "lstConvocar";
-            this.lstConvocar.Size = new System.Drawing.Size(182, 147);
+            this.lstConvocar.Size = new System.Drawing.Size(289, 160);
             this.lstConvocar.TabIndex = 8;
             // 
             // lstEspera
             // 
             this.lstEspera.FormattingEnabled = true;
-            this.lstEspera.Location = new System.Drawing.Point(344, 382);
+            this.lstEspera.Location = new System.Drawing.Point(366, 395);
             this.lstEspera.Name = "lstEspera";
-            this.lstEspera.Size = new System.Drawing.Size(205, 147);
+            this.lstEspera.Size = new System.Drawing.Size(306, 160);
             this.lstEspera.TabIndex = 9;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(435, 42);
+            this.pictureBox1.Location = new System.Drawing.Point(460, 24);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(213, 240);
+            this.pictureBox1.Size = new System.Drawing.Size(255, 308);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
@@ -154,7 +156,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(686, 544);
+            this.ClientSize = new System.Drawing.Size(754, 577);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lstEspera);
             this.Controls.Add(this.lstConvocar);

@@ -64,28 +64,64 @@ namespace Projeto_Idade_1
 
         private void cmbPosicao_SelectedIndexChanged(object sender, EventArgs e)
         {
-
             VerificarFormulario();
         }
 
         private void btnConvocar_Click(object sender, EventArgs e)
         {
+
+
             string nome = txtNome.Text;
             int idade = int.Parse(numIdade.Text);
-            string posicao = cmbPosicao.SelectedIndex.ToString();
+            string posicao = cmbPosicao.SelectedItem.ToString();
             bool apto = JogadorApto(idade, posicao);
 
-            if (apto) { 
-                
+
+            if (apto)
+            {
+
+                txtNome.Text = "";
+                numIdade.Value = 20;
+                cmbPosicao.SelectedIndex = -1;
+                lstConvocar.Items.Add("Nome: " + nome + " Idade:" + idade + " - " + "Posição: " + posicao);
+                MessageBox.Show(nome + "  está na lista de convocados");
+                LimparFormulario();
 
             }
-
-            LimparFormulario();
+            else
+            {
+                MessageBox.Show(nome + " não está apto para estar na lista de convocados");
+            }
         }
 
         private void btnEspera_Click(object sender, EventArgs e)
         {
-            LimparFormulario();
+
+            string nome = txtNome.Text;
+            int idade = int.Parse(numIdade.Text);
+            string posicao = cmbPosicao.SelectedItem.ToString();
+            ////Me
+            bool apto = JogadorApto(idade, posicao);
+
+            if (apto)
+            {
+
+                txtNome.Text = "";
+                numIdade.Value = 16;
+                cmbPosicao.SelectedIndex = -1;
+                lstEspera.Items.Add("Nome: " + nome + " Idade:" + idade + "-" + " Posição: " + posicao);
+                MessageBox.Show(nome + " está na lista de espera para de ser convocado");
+
+                LimparFormulario();
+
+            }
+            else
+            {
+
+                MessageBox.Show(nome + " não apto para estar na lista de espera para ser convocado");
+            }
+
+
         }
 
         private void LimparFormulario()
@@ -98,41 +134,20 @@ namespace Projeto_Idade_1
             btnEspera.Enabled = false;
         }
 
-        private bool JogadorApto( int idade, string posicao)
+        private bool JogadorApto(int idade, string posicao)
         {
             if (posicao == "Goleiro")
             {
                 return idade >= 20;
-                btnConvocar.Enabled = true;
-                btnEspera.Enabled = true;
-
             }
-            else {
+            else
+            {
                 return idade >= 16;
-                btnConvocar.Enabled = true;
-                btnEspera.Enabled = true;
-
             }
-            return false;
-
-
 
         }
-
-        //private void PreencherAListadeConvocacao()
-        //{
-        //    string jogador;
-
-        //    string nome = txtNome.Text;
-        //    string idade = numIdade.Value.ToString();
-        //    string posicao = cmbPosicao.SelectedItem.ToString();
-
-
-        //    jogador = nome + " - " + idade + " - " + posicao;
-
-        //    lstConvocar.Items.Add(jogador);
-        //}
     }
 }
+
 
 
