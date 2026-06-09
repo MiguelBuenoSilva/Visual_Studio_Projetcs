@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Desempenho_Jogador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Desempenho_Jogador.Designer.cs">
+      <DependentUpon>Desempenho_Jogador.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,9 @@
     <Compile Include="Selecao_Brasileira.Designer.cs">
       <DependentUpon>Selecao_Brasileira.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Desempenho_Jogador.resx">
+      <DependentUpon>Desempenho_Jogador.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

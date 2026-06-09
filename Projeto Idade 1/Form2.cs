@@ -47,8 +47,7 @@ namespace Projeto_Idade_1
 
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form2 tela = new Form2();
-            tela.Show();
+        
             this.Close();
         }
 
@@ -61,6 +60,12 @@ namespace Projeto_Idade_1
         private void seleçãoBrasileiraToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Selecao_Brasileira tela = new Selecao_Brasileira();
+            tela.Show();
+        }
+
+        private void desempenhoJogadorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Desempenho_Jogador tela = new Desempenho_Jogador();
             tela.Show();
         }
     }

@@ -37,6 +37,7 @@
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.telaCadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.seleçãoBrasileiraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.desempenhoJogadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,7 +59,8 @@
             this.tabuadaToolStripMenuItem,
             this.sairToolStripMenuItem,
             this.telaCadastroToolStripMenuItem,
-            this.seleçãoBrasileiraToolStripMenuItem});
+            this.seleçãoBrasileiraToolStripMenuItem,
+            this.desempenhoJogadorToolStripMenuItem});
             this.modulo1ToolStripMenuItem.Name = "modulo1ToolStripMenuItem";
             this.modulo1ToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
             this.modulo1ToolStripMenuItem.Text = "&Modulo1";
@@ -67,44 +69,51 @@
             // idadeToolStripMenuItem
             // 
             this.idadeToolStripMenuItem.Name = "idadeToolStripMenuItem";
-            this.idadeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.idadeToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.idadeToolStripMenuItem.Text = "&Idade";
             this.idadeToolStripMenuItem.Click += new System.EventHandler(this.idadeToolStripMenuItem_Click);
             // 
             // parImparToolStripMenuItem
             // 
             this.parImparToolStripMenuItem.Name = "parImparToolStripMenuItem";
-            this.parImparToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.parImparToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.parImparToolStripMenuItem.Text = "&Par/ Impar";
             this.parImparToolStripMenuItem.Click += new System.EventHandler(this.parImparToolStripMenuItem_Click);
             // 
             // tabuadaToolStripMenuItem
             // 
             this.tabuadaToolStripMenuItem.Name = "tabuadaToolStripMenuItem";
-            this.tabuadaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tabuadaToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.tabuadaToolStripMenuItem.Text = "&Tabuada";
             this.tabuadaToolStripMenuItem.Click += new System.EventHandler(this.tabuadaToolStripMenuItem_Click);
             // 
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.sairToolStripMenuItem.Text = "&Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
             // telaCadastroToolStripMenuItem
             // 
             this.telaCadastroToolStripMenuItem.Name = "telaCadastroToolStripMenuItem";
-            this.telaCadastroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.telaCadastroToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.telaCadastroToolStripMenuItem.Text = "Tela Cadastro";
             this.telaCadastroToolStripMenuItem.Click += new System.EventHandler(this.telaCadastroToolStripMenuItem_Click);
             // 
             // seleçãoBrasileiraToolStripMenuItem
             // 
             this.seleçãoBrasileiraToolStripMenuItem.Name = "seleçãoBrasileiraToolStripMenuItem";
-            this.seleçãoBrasileiraToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.seleçãoBrasileiraToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.seleçãoBrasileiraToolStripMenuItem.Text = "Seleção Brasileira";
             this.seleçãoBrasileiraToolStripMenuItem.Click += new System.EventHandler(this.seleçãoBrasileiraToolStripMenuItem_Click);
+            // 
+            // desempenhoJogadorToolStripMenuItem
+            // 
+            this.desempenhoJogadorToolStripMenuItem.Name = "desempenhoJogadorToolStripMenuItem";
+            this.desempenhoJogadorToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.desempenhoJogadorToolStripMenuItem.Text = "Desempenho Jogador";
+            this.desempenhoJogadorToolStripMenuItem.Click += new System.EventHandler(this.desempenhoJogadorToolStripMenuItem_Click);
             // 
             // Form2
             // 
@@ -135,5 +144,6 @@
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem telaCadastroToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem seleçãoBrasileiraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem desempenhoJogadorToolStripMenuItem;
     }
 }
