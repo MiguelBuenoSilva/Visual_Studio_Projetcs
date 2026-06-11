@@ -63,9 +63,9 @@
             // lstAvaliados
             // 
             this.lstAvaliados.FormattingEnabled = true;
-            this.lstAvaliados.Location = new System.Drawing.Point(419, 391);
+            this.lstAvaliados.Location = new System.Drawing.Point(25, 396);
             this.lstAvaliados.Name = "lstAvaliados";
-            this.lstAvaliados.Size = new System.Drawing.Size(422, 225);
+            this.lstAvaliados.Size = new System.Drawing.Size(466, 225);
             this.lstAvaliados.TabIndex = 19;
             // 
             // btnAvaliacao
@@ -150,6 +150,7 @@
             this.numGols.Name = "numGols";
             this.numGols.Size = new System.Drawing.Size(120, 20);
             this.numGols.TabIndex = 26;
+            this.numGols.ValueChanged += new System.EventHandler(this.numGols_ValueChanged);
             // 
             // numAssistencia
             // 
@@ -157,6 +158,7 @@
             this.numAssistencia.Name = "numAssistencia";
             this.numAssistencia.Size = new System.Drawing.Size(120, 20);
             this.numAssistencia.TabIndex = 25;
+            this.numAssistencia.ValueChanged += new System.EventHandler(this.numAssistencia_ValueChanged);
             // 
             // label2
             // 
@@ -180,10 +182,11 @@
             // 
             // txtPartidas
             // 
-            this.txtPartidas.Location = new System.Drawing.Point(132, 117);
+            this.txtPartidas.Location = new System.Drawing.Point(126, 118);
             this.txtPartidas.Name = "txtPartidas";
             this.txtPartidas.Size = new System.Drawing.Size(100, 20);
             this.txtPartidas.TabIndex = 20;
+            this.txtPartidas.TextChanged += new System.EventHandler(this.txtPartidas_TextChanged);
             // 
             // label3
             // 

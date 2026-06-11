@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -19,12 +20,28 @@ namespace Projeto_Idade_1
 
         private void btnVerificar_Click(object sender, EventArgs e)
         {
-			CalcularPontuacao();
+            int gols = (int)numGols.Value;
+            int assistencia = (int)numAssistencia.Value;
+			int jogos = int.Parse(txtPartidas.Text);
+
+            int pontosTotal = CalcularPontuacao(gols ,assistencia);
+
+			double media = CalcularMedia( pontosTotal, jogos);
+
+		    string classificacao =	CalcularClassificacao(media);
+
+           
+
+
+
+            lstAvaliados.Items.Add( media  +" Classificação| " + classificacao );
+
             LimparFormulario();
         }
 		private void LimparFormulario()
 		{
 			txtNome.Clear();
+			cmbPosicao.SelectedIndex = -1;
 			numGols.Value = numGols.Minimum;
 			numAssistencia.Value = numAssistencia.Minimum ;
 
@@ -50,12 +67,17 @@ namespace Projeto_Idade_1
 
 		private void VerificarFormulario()
 		{
-			
+			int gols;
+			int assistencias;
+
 
 			bool nomeOk = !string.IsNullOrWhiteSpace(txtNome.Text);
+			bool golsOk = int.TryParse(numGols.Text, out gols);
+			bool jogosOK = !string.IsNullOrWhiteSpace(txtPartidas.Text);
+			bool assistenciasOk = int.TryParse(numAssistencia.Text, out assistencias);
 			bool posicaoOk = (cmbPosicao.SelectedIndex != -1);
 
-			if (nomeOk && posicaoOk)
+			if (nomeOk && posicaoOk && jogosOK && golsOk && assistenciasOk)
 			{
 				btnAvaliacao.Enabled = true;
 			}
@@ -77,39 +99,60 @@ namespace Projeto_Idade_1
 			VerificarFormulario();
 		}
 
-		private void CalcularPontuacao() 
+		private int CalcularPontuacao( int gols, int assistencia) 
 		{
-			int gol = (int)numGols.Value;
-			int assistencia = (int)numAssistencia.Value;
+			//int totalGols = gols * 2;
+			//int totalAssistencia = assistencia * 1 ;
 
+			return (gols * 2) + (assistencia * 1);
+            
 
-			int pontos = gol * 2 + assistencia ;
-
-
-
-			lstAvaliados.Items.Add("Teste "+ pontos);
 
         }
 
-		//private void MediaPontuacao()
-		//{
+		private double CalcularMedia(int pontos, int jogos)
+		{
 
-  //          int gols = (int)numGols.Value;
-  //          int assistencias = (int)numAssistencia.Value;
-  //          int jogos = int.Parse(txtPartidas.Text);
+			return pontos / jogos;
+           
 
-  //          int pontuacao = (gols * 2) + assistencias;
-  //          double media = 0;
 
-  //          if (jogos > 0)
-  //          {
-  //              media = (double)pontuacao / jogos;
-  //          }
+        }
 
-  //          string resultado = $"Pontuação: {pontuacao} | Média por jogo: {media:F2}";
+        private void txtPartidas_TextChanged(object sender, EventArgs e)
+        {
+            VerificarFormulario();
+        }
 
-  //          lstAvaliados.Items.Add(resultado);
+        private void numGols_ValueChanged(object sender, EventArgs e)
+        {
+            VerificarFormulario();
+        }
 
-  //      }
+        private void numAssistencia_ValueChanged(object sender, EventArgs e)
+        {
+            VerificarFormulario();
+        }
+
+		private string CalcularClassificacao( double media) 
+		{
+			if(media <= 1)
+			{
+				return "Ruim";
+
+			}else if (media <= 2)
+			{
+				return "Regular";
+
+			}else if (media <= 3)
+			{
+				return "Bom";
+			} else 
+			{
+				return "Profissional";
+			}
+
+			
+		}
     }
 }
