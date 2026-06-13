@@ -113,7 +113,7 @@ namespace Projeto_Idade_1
 		private double CalcularMedia(int pontos, int jogos)
 		{
 
-			return pontos / jogos;
+			return (double)pontos / jogos;
            
 
 
