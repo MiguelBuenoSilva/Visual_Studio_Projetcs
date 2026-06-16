@@ -11,49 +11,51 @@ using System.Windows.Forms;
 
 namespace Projeto_Idade_1
 {
-    public partial class Desempenho_Jogador : Form
-    {
-        public Desempenho_Jogador()
-        {
-            InitializeComponent();
-        }
+	public partial class Desempenho_Jogador : Form
+	{
+		public Desempenho_Jogador()
+		{
+			InitializeComponent();
+		}
 
-        private void btnVerificar_Click(object sender, EventArgs e)
-        {
-            int gols = (int)numGols.Value;
-            int assistencia = (int)numAssistencia.Value;
+		private void btnVerificar_Click(object sender, EventArgs e)
+		{
+			int gols = (int)numGols.Value;
+			int assistencia = (int)numAssistencia.Value;
 			int jogos = int.Parse(txtPartidas.Text);
 
-            int pontosTotal = CalcularPontuacao(gols ,assistencia);
+			int pontosTotal = CalcularPontuacao(gols, assistencia);
 
-			double media = CalcularMedia( pontosTotal, jogos);
+			double media = CalcularMedia(pontosTotal, jogos);
 
-		    string classificacao =	CalcularClassificacao(media);
+			string classificacao = CalcularClassificacao(media);
 
-           
+			ConvocacaoJogador(media, gols);
 
 
 
-            lstAvaliados.Items.Add( media  +" Classificação| " + classificacao );
 
-            LimparFormulario();
-        }
+
+			lstAvaliados.Items.Add(media + " Classificação| " + classificacao);
+
+			LimparFormulario();
+		}
 		private void LimparFormulario()
 		{
 			txtNome.Clear();
 			cmbPosicao.SelectedIndex = -1;
 			numGols.Value = numGols.Minimum;
-			numAssistencia.Value = numAssistencia.Minimum ;
+			numAssistencia.Value = numAssistencia.Minimum;
 
 			txtNome.Focus();
-			
+
 			cmbPosicao.SelectedIndex = -1;
 			btnAvaliacao.Enabled = false;
-			
+
 		}
 
-        private void Desempenho_Jogador_Load(object sender, EventArgs e)
-        {
+		private void Desempenho_Jogador_Load(object sender, EventArgs e)
+		{
 			// Adicionar as posições ao ComboBox
 			cmbPosicao.Items.Add("Goleiro");
 			cmbPosicao.Items.Add("Zagueiro");
@@ -84,75 +86,94 @@ namespace Projeto_Idade_1
 			else
 			{
 				btnAvaliacao.Enabled = false;
-				
+
 			}
 
 		}
 
-        private void txtNome_TextChanged(object sender, EventArgs e)
-        {
-			VerificarFormulario();
-        }
-
-        private void cmbPosicao_SelectedIndexChanged(object sender, EventArgs e)
-        {
+		private void txtNome_TextChanged(object sender, EventArgs e)
+		{
 			VerificarFormulario();
 		}
 
-		private int CalcularPontuacao( int gols, int assistencia) 
+		private void cmbPosicao_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			VerificarFormulario();
+		}
+
+		private int CalcularPontuacao(int gols, int assistencia)
 		{
 			//int totalGols = gols * 2;
 			//int totalAssistencia = assistencia * 1 ;
 
 			return (gols * 2) + (assistencia * 1);
-            
 
 
-        }
+
+		}
 
 		private double CalcularMedia(int pontos, int jogos)
 		{
 
+<<<<<<< HEAD
 			return (double )pontos / jogos;
            
+=======
+			return (double)pontos / jogos;
+>>>>>>> 5b5bd447c60234b4dea9a6327cece3208223331b
 
 
-        }
 
-        private void txtPartidas_TextChanged(object sender, EventArgs e)
-        {
-            VerificarFormulario();
-        }
+		}
 
-        private void numGols_ValueChanged(object sender, EventArgs e)
-        {
-            VerificarFormulario();
-        }
-
-        private void numAssistencia_ValueChanged(object sender, EventArgs e)
-        {
-            VerificarFormulario();
-        }
-
-		private string CalcularClassificacao( double media) 
+		private void txtPartidas_TextChanged(object sender, EventArgs e)
 		{
-			if(media <= 1)
+			VerificarFormulario();
+		}
+
+		private void numGols_ValueChanged(object sender, EventArgs e)
+		{
+			VerificarFormulario();
+		}
+
+		private void numAssistencia_ValueChanged(object sender, EventArgs e)
+		{
+			VerificarFormulario();
+		}
+
+		private string CalcularClassificacao(double media)
+		{
+			if (media <= 1)
 			{
 				return "Ruim";
 
-			}else if (media <= 2)
+			} else if (media <= 2)
 			{
 				return "Regular";
 
-			}else if (media <= 3)
+			} else if (media <= 3)
 			{
 				return "Bom";
-			} else 
+			} else
 			{
 				return "Profissional";
 			}
 
-			
+
+		}
+		private void ConvocacaoJogador(double media, int gols)
+		{
+			string nome = txtNome.Text;
+
+			if(media >= 2 && gols >= 3)
+			{
+				 MessageBox.Show("Parabens!!!, "  +  nome  +  " você foi convocado para jogar na Seleção Brasileira");
+			}
+			else
+			{
+				MessageBox.Show( "Infelizmente " + nome + "  você não foi convocado, mas tente na proxima vez estaremos aguardando você.");
+			}
+
 		}
     }
 }
