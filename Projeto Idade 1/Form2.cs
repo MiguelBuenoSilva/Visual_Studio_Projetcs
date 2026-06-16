@@ -68,5 +68,11 @@ namespace Projeto_Idade_1
             Desempenho_Jogador tela = new Desempenho_Jogador();
             tela.Show();
         }
+
+        private void posicaoCamisaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Posicao_Camisa tela = new Posicao_Camisa();
+            tela.Show();
+        }
     }
 }

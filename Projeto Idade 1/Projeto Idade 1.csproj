@@ -82,6 +82,12 @@
     <Compile Include="Form5.Designer.cs">
       <DependentUpon>Form5.cs</DependentUpon>
     </Compile>
+    <Compile Include="Posicao_Camisa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Posicao_Camisa.Designer.cs">
+      <DependentUpon>Posicao_Camisa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Selecao_Brasileira.cs">
@@ -107,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form5.resx">
       <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Posicao_Camisa.resx">
+      <DependentUpon>Posicao_Camisa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

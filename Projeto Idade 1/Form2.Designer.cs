@@ -38,13 +38,16 @@
             this.telaCadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.seleçãoBrasileiraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.desempenhoJogadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modulo2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.posicaoCamisaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.modulo1ToolStripMenuItem});
+            this.modulo1ToolStripMenuItem,
+            this.modulo2ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -115,6 +118,21 @@
             this.desempenhoJogadorToolStripMenuItem.Text = "Desempenho Jogador";
             this.desempenhoJogadorToolStripMenuItem.Click += new System.EventHandler(this.desempenhoJogadorToolStripMenuItem_Click);
             // 
+            // modulo2ToolStripMenuItem
+            // 
+            this.modulo2ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.posicaoCamisaToolStripMenuItem});
+            this.modulo2ToolStripMenuItem.Name = "modulo2ToolStripMenuItem";
+            this.modulo2ToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
+            this.modulo2ToolStripMenuItem.Text = "&Modulo2";
+            // 
+            // posicaoCamisaToolStripMenuItem
+            // 
+            this.posicaoCamisaToolStripMenuItem.Name = "posicaoCamisaToolStripMenuItem";
+            this.posicaoCamisaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.posicaoCamisaToolStripMenuItem.Text = "Posicao Camisa";
+            this.posicaoCamisaToolStripMenuItem.Click += new System.EventHandler(this.posicaoCamisaToolStripMenuItem_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -145,5 +163,7 @@
         private System.Windows.Forms.ToolStripMenuItem telaCadastroToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem seleçãoBrasileiraToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem desempenhoJogadorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem modulo2ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem posicaoCamisaToolStripMenuItem;
     }
 }
