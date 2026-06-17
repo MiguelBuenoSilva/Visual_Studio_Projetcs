@@ -40,6 +40,7 @@
             this.desempenhoJogadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modulo2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.posicaoCamisaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.campeonatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -121,7 +122,8 @@
             // modulo2ToolStripMenuItem
             // 
             this.modulo2ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.posicaoCamisaToolStripMenuItem});
+            this.posicaoCamisaToolStripMenuItem,
+            this.campeonatosToolStripMenuItem});
             this.modulo2ToolStripMenuItem.Name = "modulo2ToolStripMenuItem";
             this.modulo2ToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
             this.modulo2ToolStripMenuItem.Text = "&Modulo2";
@@ -132,6 +134,13 @@
             this.posicaoCamisaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.posicaoCamisaToolStripMenuItem.Text = "Posicao Camisa";
             this.posicaoCamisaToolStripMenuItem.Click += new System.EventHandler(this.posicaoCamisaToolStripMenuItem_Click);
+            // 
+            // campeonatosToolStripMenuItem
+            // 
+            this.campeonatosToolStripMenuItem.Name = "campeonatosToolStripMenuItem";
+            this.campeonatosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.campeonatosToolStripMenuItem.Text = "Competicao";
+            this.campeonatosToolStripMenuItem.Click += new System.EventHandler(this.campeonatosToolStripMenuItem_Click);
             // 
             // Form2
             // 
@@ -165,5 +174,6 @@
         private System.Windows.Forms.ToolStripMenuItem desempenhoJogadorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem modulo2ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem posicaoCamisaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem campeonatosToolStripMenuItem;
     }
 }

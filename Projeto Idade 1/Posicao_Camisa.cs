@@ -20,9 +20,7 @@ namespace Projeto_Idade_1
         private void BtnVerificar_Click(object sender, EventArgs e)
         {
             ValidarCamiseta();
-            MessageBox.Show(Amistoso());
-
-            LblCamisaInvalida.Text(Amistoso());
+            
         }
 
         private void ValidarCamiseta()
@@ -81,26 +79,7 @@ namespace Projeto_Idade_1
             LblCamisaInvalida.Visible = false;
 
         }
-        private string Amistoso()
-        {
-            int camisa = (int)NumCamisetas.Value;
-
-            switch (camisa)
-            {
-                case 1:
-                    return "AMISTOSO : É um jogo de preparação sem caráter oficial ou disputa de pontos.";
-                case 3:
-                    return "Eliminaórias : É a fase classificatória que as seleções disputam para conseguir uma vaga na Copa do Mundo";
-                case 8:
-                    return "Copa América : É o torneio continental oficial que define a seleção campeã da América do Sul.";
-                case 9:
-                    return "Copa do Mundo :  É o maior e mais importante torneio de futebol do planeta.";
-                default:
-                    return "Testando";
-
-            }
-
-        }
+       
     }
 
 }

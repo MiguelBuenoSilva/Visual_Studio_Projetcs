@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Competicao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Competicao.Designer.cs">
+      <DependentUpon>Competicao.cs</DependentUpon>
+    </Compile>
     <Compile Include="Desempenho_Jogador.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,9 @@
     <Compile Include="Selecao_Brasileira.Designer.cs">
       <DependentUpon>Selecao_Brasileira.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Competicao.resx">
+      <DependentUpon>Competicao.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Desempenho_Jogador.resx">
       <DependentUpon>Desempenho_Jogador.cs</DependentUpon>
     </EmbeddedResource>
@@ -125,6 +134,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Selecao_Brasileira.resx">
       <DependentUpon>Selecao_Brasileira.cs</DependentUpon>
@@ -141,6 +151,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copa america.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminatorias.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\amistoso.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copadomundo.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\polar.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

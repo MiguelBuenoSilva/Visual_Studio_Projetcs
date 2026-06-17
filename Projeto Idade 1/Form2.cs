@@ -74,5 +74,11 @@ namespace Projeto_Idade_1
             Posicao_Camisa tela = new Posicao_Camisa();
             tela.Show();
         }
+
+        private void campeonatosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Competicao tela = new Competicao();
+            tela.Show();
+        }
     }
 }
