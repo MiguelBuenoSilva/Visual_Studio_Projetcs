@@ -103,6 +103,16 @@ namespace Projeto_Idade_1.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logoBra_svg {
+            get {
+                object obj = ResourceManager.GetObject("logoBra.svg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap polar {
             get {
                 object obj = ResourceManager.GetObject("polar", resourceCulture);
