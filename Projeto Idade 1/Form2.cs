@@ -80,5 +80,11 @@ namespace Projeto_Idade_1
             Competicao tela = new Competicao();
             tela.Show();
         }
+
+        private void historicoSelecaoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HistoricoSelecao tela = new HistoricoSelecao();
+            tela.Show();
+        }
     }
 }

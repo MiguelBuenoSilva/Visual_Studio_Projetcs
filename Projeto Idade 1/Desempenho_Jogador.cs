@@ -30,13 +30,13 @@ namespace Projeto_Idade_1
 
 			string classificacao = CalcularClassificacao(media);
 
-			ConvocacaoJogador(media, gols);
+            lstAvaliados.Items.Add(media + " Classificação| " + classificacao);
+
+            ConvocacaoJogador(media, gols);
 
 
 
-
-
-			lstAvaliados.Items.Add(media + " Classificação| " + classificacao);
+			
 
 			LimparFormulario();
 		}
@@ -114,14 +114,8 @@ namespace Projeto_Idade_1
 
 		private double CalcularMedia(int pontos, int jogos)
 		{
-
-
-			return (double )pontos / jogos;
+			return (double) pontos / jogos;
            
-
-
-
-
 
 		}
 
