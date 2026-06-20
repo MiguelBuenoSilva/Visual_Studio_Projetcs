@@ -142,11 +142,11 @@ namespace Projeto_Idade_1
 			{
 				return "Ruim";
 
-			} else if (media <= 2)
+			} else if (media <= 5)
 			{
 				return "Regular";
 
-			} else if (media <= 3)
+			} else if (media <= 8)
 			{
 				return "Bom";
 			} else
