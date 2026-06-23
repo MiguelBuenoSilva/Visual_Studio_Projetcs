@@ -190,7 +190,7 @@ namespace Projeto_Idade_1
 
         private void VisualizarSubstituicoes()
         {
-            //Limpar();
+            Limpar();
             MessageBox.Show("Em desenvolvimento, Por favor aguardar");
         }
 
