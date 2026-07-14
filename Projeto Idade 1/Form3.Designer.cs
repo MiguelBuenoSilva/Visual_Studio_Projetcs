@@ -52,6 +52,7 @@
             this.txtParImpar.Name = "txtParImpar";
             this.txtParImpar.Size = new System.Drawing.Size(119, 20);
             this.txtParImpar.TabIndex = 1;
+            this.txtParImpar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtParImpar_KeyPress);
             // 
             // lblResultado
             // 

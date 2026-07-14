@@ -19,20 +19,28 @@ namespace Projeto_Idade_1
 
         private void Form3_Load(object sender, EventArgs e)
         {
-
+        
         }
 
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
-            int numero =int.Parse(txtParImpar.Text);
-
-            if(numero % 2 == 0)
+            // Tenta converter o texto para número de forma segura
+            if (int.TryParse(txtParImpar.Text, out int numero))
             {
-                lblResultado.Text ="Esse número é par: " + numero;
+                if (numero % 2 == 0)
+                {
+                    lblResultado.Text = "Esse número é par: " + numero;
+                }
+                else
+                {
+                    lblResultado.Text = "Esse número é ímpar: " + numero;
+                }
             }
             else
             {
-                lblResultado.Text = " Esse número é ímpar: " + numero;
+                // Caso o campo esteja vazio
+                MessageBox.Show( "Por favor, digite um número válido.");
+                txtParImpar.Focus();
             }
         }
 
@@ -51,6 +59,15 @@ namespace Projeto_Idade_1
         private void btnFechar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txtParImpar_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Bloqueia tudo o que não for número e não for tecla de controle (como Backspace)
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }
