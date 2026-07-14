@@ -36,6 +36,7 @@ namespace Projeto_Idade_1
                     break;
                 case 4:
                     LblVisualizar.Text = "Subtituições";
+                    NumericNumeros.Focus();
                     VisualizarSubstituicoes();
                     break;
                 case 5:

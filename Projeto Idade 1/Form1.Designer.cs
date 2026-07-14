@@ -28,18 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -75,19 +72,8 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(44, 369);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 20);
+            this.label2.Size = new System.Drawing.Size(0, 20);
             this.label2.TabIndex = 3;
-            this.label2.Text = "label2";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(59, 65);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(192, 110);
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Visible = false;
             // 
             // label3
             // 
@@ -95,9 +81,8 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(44, 406);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 20);
+            this.label3.Size = new System.Drawing.Size(0, 20);
             this.label3.TabIndex = 5;
-            this.label3.Text = "label3";
             // 
             // radioButton1
             // 
@@ -121,15 +106,14 @@
             this.radioButton2.Text = "Rio de Janeiro -RJ";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
-            // pictureBox2
+            // pictureBox1
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(59, 181);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(192, 172);
-            this.pictureBox2.TabIndex = 8;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Visible = false;
+            this.pictureBox1.Location = new System.Drawing.Point(26, 119);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(275, 187);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
@@ -137,7 +121,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.label3);
@@ -151,7 +134,6 @@
             this.Text = "Idade";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -167,7 +149,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

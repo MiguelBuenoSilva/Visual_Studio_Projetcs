@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -25,46 +26,57 @@ namespace Projeto_Idade_1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (String.IsNullOrEmpty(textBox1.Text))
+            // 1. Validação de campo vazio
+            if (string.IsNullOrEmpty(textBox1.Text))
             {
-                MessageBox.Show("Preencher o campo vazio", "Erro!!!");
+                MessageBox.Show("Preencher o campo vazio", "Erro");
+                textBox1.Focus();
                 return;
             }
 
             int idade;
 
+            // 2. Validação se é um número válido
             if (!int.TryParse(textBox1.Text, out idade))
             {
-                MessageBox.Show("Coloque número Gênio com J");
+                MessageBox.Show("Digite apenas números", "Erro");
+                textBox1.Focus();
+                textBox1.Clear();
                 return;
             }
 
-
-            if (idade <= 17)
-            {
-                label2.Text = "Menor de Idade: " + idade;
-            }
-            else
-            {
-                label2.Text = "Maior de Idade: " + idade;
-            }
-
+            // 3. Validação dos RadioButtons (Cidades)
             if (radioButton1.Checked)
             {
                 label3.Text = "Você mora em São Paulo";
-                pictureBox1.Visible = true;
-                pictureBox2.Visible = false;
+                pictureBox1.Image = Properties.Resources.Sao_Paulo;
+
             }
             else if (radioButton2.Checked)
             {
-                label3.Text = "Você mora em Rio de Janeiro";
-                pictureBox2.Visible = true;
-                pictureBox1.Visible = false;
+                label3.Text = "Você mora no Rio de Janeiro";
+                pictureBox1.Image = Properties.Resources.polar;
             }
             else
             {
+                // Se nenhum foi selecionado, exibe o erro e para o código aqui!
                 MessageBox.Show("Selecione um CheckBox", "Erro");
+                return;
             }
+
+            // 4. Exibição da idade (Só executa se passar por todas as validações acima)
+            if (idade >= 18)
+            {
+                label2.Text = "Maior de Idade: " + idade;
+            }
+            else
+            {
+                label2.Text = "Menor de Idade: " + idade;
+            }
+
+            // 5. Limpeza dos campos após o sucesso
+            textBox1.Focus();
+            textBox1.Clear();
         }
 
        
