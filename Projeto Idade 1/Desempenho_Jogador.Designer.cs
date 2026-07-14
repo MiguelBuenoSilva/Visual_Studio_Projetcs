@@ -85,7 +85,7 @@
             this.lblPosicao.Location = new System.Drawing.Point(6, 71);
             this.lblPosicao.Name = "lblPosicao";
             this.lblPosicao.Size = new System.Drawing.Size(54, 15);
-            this.lblPosicao.TabIndex = 16;
+            this.lblPosicao.TabIndex = 2;
             this.lblPosicao.Text = "Posição:";
             // 
             // lblPartidas
@@ -95,16 +95,16 @@
             this.lblPartidas.Location = new System.Drawing.Point(6, 118);
             this.lblPartidas.Name = "lblPartidas";
             this.lblPartidas.Size = new System.Drawing.Size(114, 15);
-            this.lblPartidas.TabIndex = 15;
+            this.lblPartidas.TabIndex = 4;
             this.lblPartidas.Text = "Numeros de Jogos:";
             // 
             // cmbPosicao
             // 
             this.cmbPosicao.FormattingEnabled = true;
-            this.cmbPosicao.Location = new System.Drawing.Point(86, 71);
+            this.cmbPosicao.Location = new System.Drawing.Point(140, 71);
             this.cmbPosicao.Name = "cmbPosicao";
             this.cmbPosicao.Size = new System.Drawing.Size(121, 21);
-            this.cmbPosicao.TabIndex = 14;
+            this.cmbPosicao.TabIndex = 3;
             this.cmbPosicao.SelectedIndexChanged += new System.EventHandler(this.cmbPosicao_SelectedIndexChanged);
             // 
             // lblNomeJogador
@@ -114,16 +114,16 @@
             this.lblNomeJogador.Location = new System.Drawing.Point(6, 26);
             this.lblNomeJogador.Name = "lblNomeJogador";
             this.lblNomeJogador.Size = new System.Drawing.Size(109, 15);
-            this.lblNomeJogador.TabIndex = 12;
+            this.lblNomeJogador.TabIndex = 0;
             this.lblNomeJogador.Text = "Nome do Jogador:";
             // 
             // txtNome
             // 
             this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNome.Location = new System.Drawing.Point(121, 21);
+            this.txtNome.Location = new System.Drawing.Point(140, 19);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(239, 24);
-            this.txtNome.TabIndex = 11;
+            this.txtNome.TabIndex = 1;
             this.txtNome.TextChanged += new System.EventHandler(this.txtNome_TextChanged);
             // 
             // grpAvaliacao
@@ -149,15 +149,15 @@
             this.numGols.Location = new System.Drawing.Point(140, 165);
             this.numGols.Name = "numGols";
             this.numGols.Size = new System.Drawing.Size(120, 20);
-            this.numGols.TabIndex = 26;
+            this.numGols.TabIndex = 7;
             this.numGols.ValueChanged += new System.EventHandler(this.numGols_ValueChanged);
             // 
             // numAssistencia
             // 
-            this.numAssistencia.Location = new System.Drawing.Point(89, 206);
+            this.numAssistencia.Location = new System.Drawing.Point(140, 201);
             this.numAssistencia.Name = "numAssistencia";
             this.numAssistencia.Size = new System.Drawing.Size(120, 20);
-            this.numAssistencia.TabIndex = 25;
+            this.numAssistencia.TabIndex = 9;
             this.numAssistencia.ValueChanged += new System.EventHandler(this.numAssistencia_ValueChanged);
             // 
             // label2
@@ -167,7 +167,7 @@
             this.label2.Location = new System.Drawing.Point(6, 206);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 15);
-            this.label2.TabIndex = 23;
+            this.label2.TabIndex = 8;
             this.label2.Text = "Assistências:";
             // 
             // label1
@@ -177,15 +177,15 @@
             this.label1.Location = new System.Drawing.Point(6, 165);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(128, 15);
-            this.label1.TabIndex = 21;
+            this.label1.TabIndex = 6;
             this.label1.Text = " Quantidades de Gols:";
             // 
             // txtPartidas
             // 
-            this.txtPartidas.Location = new System.Drawing.Point(126, 118);
+            this.txtPartidas.Location = new System.Drawing.Point(140, 118);
             this.txtPartidas.Name = "txtPartidas";
-            this.txtPartidas.Size = new System.Drawing.Size(100, 20);
-            this.txtPartidas.TabIndex = 20;
+            this.txtPartidas.Size = new System.Drawing.Size(121, 20);
+            this.txtPartidas.TabIndex = 5;
             this.txtPartidas.TextChanged += new System.EventHandler(this.txtPartidas_TextChanged);
             // 
             // label3

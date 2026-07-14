@@ -89,7 +89,7 @@
             this.txtNome.Location = new System.Drawing.Point(9, 42);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(335, 21);
-            this.txtNome.TabIndex = 1;
+            this.txtNome.TabIndex = 2;
             this.txtNome.TextChanged += new System.EventHandler(this.txtNome_TextChanged);
             this.txtNome.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNome_KeyPress);
             // 
@@ -100,7 +100,7 @@
             this.label1.Location = new System.Drawing.Point(6, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(110, 15);
-            this.label1.TabIndex = 3;
+            this.label1.TabIndex = 1;
             this.label1.Text = "Nome Completo";
             // 
             // label3
@@ -120,7 +120,7 @@
             this.label4.Location = new System.Drawing.Point(390, 23);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(63, 15);
-            this.label4.TabIndex = 7;
+            this.label4.TabIndex = 3;
             this.label4.Text = "Telefone";
             // 
             // dateTimePicker1
@@ -133,7 +133,7 @@
             this.dateTimePicker1.MinDate = new System.DateTime(1950, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(150, 20);
-            this.dateTimePicker1.TabIndex = 4;
+            this.dateTimePicker1.TabIndex = 8;
             // 
             // label5
             // 
@@ -142,7 +142,7 @@
             this.label5.Location = new System.Drawing.Point(319, 78);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(137, 15);
-            this.label5.TabIndex = 9;
+            this.label5.TabIndex = 7;
             this.label5.Text = "Data de Nascimento";
             // 
             // label6
@@ -152,7 +152,7 @@
             this.label6.Location = new System.Drawing.Point(6, 128);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(54, 15);
-            this.label6.TabIndex = 10;
+            this.label6.TabIndex = 9;
             this.label6.Text = "Gênero";
             // 
             // cbGenero
@@ -166,11 +166,11 @@
             " Agênero",
             " Gênero fluido ",
             " Bigênero"});
-            this.cbGenero.Location = new System.Drawing.Point(9, 158);
+            this.cbGenero.Location = new System.Drawing.Point(6, 146);
             this.cbGenero.MaxDropDownItems = 5;
             this.cbGenero.Name = "cbGenero";
             this.cbGenero.Size = new System.Drawing.Size(162, 23);
-            this.cbGenero.TabIndex = 11;
+            this.cbGenero.TabIndex = 10;
             this.cbGenero.SelectedIndexChanged += new System.EventHandler(this.cbGenero_SelectedIndexChanged);
             // 
             // txtEndereço
@@ -178,7 +178,7 @@
             this.txtEndereço.Location = new System.Drawing.Point(6, 51);
             this.txtEndereço.Name = "txtEndereço";
             this.txtEndereço.Size = new System.Drawing.Size(338, 21);
-            this.txtEndereço.TabIndex = 6;
+            this.txtEndereço.TabIndex = 13;
             // 
             // label7
             // 
@@ -187,7 +187,7 @@
             this.label7.Location = new System.Drawing.Point(6, 33);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(68, 15);
-            this.label7.TabIndex = 13;
+            this.label7.TabIndex = 12;
             this.label7.Text = "Endereço";
             // 
             // txtEmail
@@ -195,7 +195,7 @@
             this.txtEmail.Location = new System.Drawing.Point(12, 51);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(256, 21);
-            this.txtEmail.TabIndex = 11;
+            this.txtEmail.TabIndex = 24;
             // 
             // label10
             // 
@@ -204,7 +204,7 @@
             this.label10.Location = new System.Drawing.Point(6, 32);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(49, 15);
-            this.label10.TabIndex = 21;
+            this.label10.TabIndex = 23;
             this.label10.Text = "E-mail";
             // 
             // cbEstado
@@ -241,7 +241,7 @@
             this.cbEstado.Location = new System.Drawing.Point(297, 99);
             this.cbEstado.Name = "cbEstado";
             this.cbEstado.Size = new System.Drawing.Size(121, 23);
-            this.cbEstado.TabIndex = 10;
+            this.cbEstado.TabIndex = 21;
             // 
             // label2
             // 
@@ -250,7 +250,7 @@
             this.label2.Location = new System.Drawing.Point(294, 81);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 15);
-            this.label2.TabIndex = 23;
+            this.label2.TabIndex = 20;
             this.label2.Text = "Estado";
             // 
             // label8
@@ -260,7 +260,7 @@
             this.label8.Location = new System.Drawing.Point(6, 97);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(115, 15);
-            this.label8.TabIndex = 24;
+            this.label8.TabIndex = 26;
             this.label8.Text = "Confirmar e-mail";
             // 
             // txtConfirmarEmail
@@ -268,7 +268,7 @@
             this.txtConfirmarEmail.Location = new System.Drawing.Point(12, 116);
             this.txtConfirmarEmail.Name = "txtConfirmarEmail";
             this.txtConfirmarEmail.Size = new System.Drawing.Size(254, 21);
-            this.txtConfirmarEmail.TabIndex = 13;
+            this.txtConfirmarEmail.TabIndex = 25;
             // 
             // label9
             // 
@@ -277,7 +277,7 @@
             this.label9.Location = new System.Drawing.Point(313, 97);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(113, 15);
-            this.label9.TabIndex = 26;
+            this.label9.TabIndex = 28;
             this.label9.Text = "Confirmar senha";
             // 
             // label11
@@ -287,7 +287,7 @@
             this.label11.Location = new System.Drawing.Point(313, 32);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(48, 15);
-            this.label11.TabIndex = 27;
+            this.label11.TabIndex = 26;
             this.label11.Text = "Senha";
             // 
             // txtSenha
@@ -295,8 +295,9 @@
             this.txtSenha.Location = new System.Drawing.Point(322, 51);
             this.txtSenha.MaxLength = 10;
             this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(240, 21);
-            this.txtSenha.TabIndex = 12;
+            this.txtSenha.TabIndex = 27;
             this.txtSenha.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSenha_KeyPress_1);
             // 
             // txtConfirmarSenha
@@ -304,8 +305,9 @@
             this.txtConfirmarSenha.Location = new System.Drawing.Point(322, 116);
             this.txtConfirmarSenha.MaxLength = 10;
             this.txtConfirmarSenha.Name = "txtConfirmarSenha";
+            this.txtConfirmarSenha.PasswordChar = '*';
             this.txtConfirmarSenha.Size = new System.Drawing.Size(240, 21);
-            this.txtConfirmarSenha.TabIndex = 14;
+            this.txtConfirmarSenha.TabIndex = 29;
             this.txtConfirmarSenha.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtConfirmarSenha_KeyPress_1);
             // 
             // btnConfirmar
@@ -315,7 +317,7 @@
             this.btnConfirmar.Location = new System.Drawing.Point(900, 691);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(81, 29);
-            this.btnConfirmar.TabIndex = 15;
+            this.btnConfirmar.TabIndex = 30;
             this.btnConfirmar.Text = "Confirmar";
             this.btnConfirmar.UseVisualStyleBackColor = false;
             this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
@@ -327,7 +329,7 @@
             this.button2.Location = new System.Drawing.Point(813, 691);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(69, 26);
-            this.button2.TabIndex = 16;
+            this.button2.TabIndex = 31;
             this.button2.Text = "Limpar";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -337,7 +339,7 @@
             this.txtCEP.Location = new System.Drawing.Point(6, 101);
             this.txtCEP.Name = "txtCEP";
             this.txtCEP.Size = new System.Drawing.Size(137, 21);
-            this.txtCEP.TabIndex = 9;
+            this.txtCEP.TabIndex = 19;
             // 
             // label13
             // 
@@ -346,7 +348,7 @@
             this.label13.Location = new System.Drawing.Point(9, 85);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(34, 15);
-            this.label13.TabIndex = 34;
+            this.label13.TabIndex = 18;
             this.label13.Text = "CEP";
             // 
             // txtNumero
@@ -354,7 +356,7 @@
             this.txtNumero.Location = new System.Drawing.Point(373, 51);
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Size = new System.Drawing.Size(32, 21);
-            this.txtNumero.TabIndex = 7;
+            this.txtNumero.TabIndex = 15;
             // 
             // label15
             // 
@@ -363,7 +365,7 @@
             this.label15.Location = new System.Drawing.Point(370, 33);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(22, 15);
-            this.label15.TabIndex = 37;
+            this.label15.TabIndex = 14;
             this.label15.Text = "Nº";
             // 
             // txtComplemento
@@ -371,7 +373,7 @@
             this.txtComplemento.Location = new System.Drawing.Point(435, 51);
             this.txtComplemento.Name = "txtComplemento";
             this.txtComplemento.Size = new System.Drawing.Size(102, 21);
-            this.txtComplemento.TabIndex = 8;
+            this.txtComplemento.TabIndex = 17;
             // 
             // label16
             // 
@@ -380,7 +382,7 @@
             this.label16.Location = new System.Drawing.Point(432, 33);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(96, 15);
-            this.label16.TabIndex = 39;
+            this.label16.TabIndex = 16;
             this.label16.Text = "Complemento";
             // 
             // pictureBox1
@@ -434,7 +436,7 @@
             this.groupBox1.Location = new System.Drawing.Point(10, 64);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(606, 219);
-            this.groupBox1.TabIndex = 41;
+            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados Pessoais";
             // 
@@ -444,7 +446,7 @@
             this.maskedTxtCPF.Mask = "000.000.000-00";
             this.maskedTxtCPF.Name = "maskedTxtCPF";
             this.maskedTxtCPF.Size = new System.Drawing.Size(226, 21);
-            this.maskedTxtCPF.TabIndex = 50;
+            this.maskedTxtCPF.TabIndex = 6;
             this.maskedTxtCPF.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTxtCPF_MaskInputRejected);
             // 
             // maskedTxtTelefone
@@ -453,7 +455,7 @@
             this.maskedTxtTelefone.Mask = "(00) 00000-0000";
             this.maskedTxtTelefone.Name = "maskedTxtTelefone";
             this.maskedTxtTelefone.Size = new System.Drawing.Size(169, 21);
-            this.maskedTxtTelefone.TabIndex = 49;
+            this.maskedTxtTelefone.TabIndex = 4;
             this.maskedTxtTelefone.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTxtTelefone_MaskInputRejected);
             // 
             // lblAsteriscoCPF
@@ -518,7 +520,7 @@
             this.groupBox2.Location = new System.Drawing.Point(10, 300);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(606, 140);
-            this.groupBox2.TabIndex = 42;
+            this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Localização";
             // 
@@ -544,7 +546,7 @@
             this.groupBox3.Location = new System.Drawing.Point(10, 474);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(616, 172);
-            this.groupBox3.TabIndex = 43;
+            this.groupBox3.TabIndex = 22;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Informações de Acesso";
             // 

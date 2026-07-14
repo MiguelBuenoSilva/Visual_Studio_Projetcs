@@ -179,5 +179,11 @@
   <ItemGroup>
     <None Include="Resources\logoBra.svg.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\polar1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sao Paulo.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

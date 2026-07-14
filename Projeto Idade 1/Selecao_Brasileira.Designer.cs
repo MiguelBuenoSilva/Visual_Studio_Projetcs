@@ -67,7 +67,7 @@
             // 
             this.numIdade.Location = new System.Drawing.Point(104, 205);
             this.numIdade.Maximum = new decimal(new int[] {
-            50,
+            40,
             0,
             0,
             0});

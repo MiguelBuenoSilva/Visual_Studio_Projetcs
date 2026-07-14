@@ -41,7 +41,7 @@
             // 
             this.LblCampeonatos.AutoSize = true;
             this.LblCampeonatos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblCampeonatos.Location = new System.Drawing.Point(282, 90);
+            this.LblCampeonatos.Location = new System.Drawing.Point(12, 284);
             this.LblCampeonatos.Name = "LblCampeonatos";
             this.LblCampeonatos.Size = new System.Drawing.Size(11, 16);
             this.LblCampeonatos.TabIndex = 21;
@@ -56,7 +56,7 @@
             // 
             // BtnVerificar
             // 
-            this.BtnVerificar.Location = new System.Drawing.Point(97, 320);
+            this.BtnVerificar.Location = new System.Drawing.Point(94, 372);
             this.BtnVerificar.Name = "BtnVerificar";
             this.BtnVerificar.Size = new System.Drawing.Size(75, 23);
             this.BtnVerificar.TabIndex = 14;
@@ -87,7 +87,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(527, 450);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.LblCampeonatos);
             this.Controls.Add(this.NumecCamiseta);

@@ -36,6 +36,7 @@ namespace Projeto_Idade_1
                     break;
                 case 4:
                     LblVisualizar.Text = "Subtituições";
+                    NumericNumeros.Focus();
                     VisualizarSubstituicoes();
                     break;
                 case 5:
@@ -131,6 +132,10 @@ namespace Projeto_Idade_1
             Limpar();
 
             // Histórico de partidas (2023–2026)
+
+            LstHistorico.Items.Add("Total de Jogos(2023–2026):\n Partidas: 38 |" +
+                " Vitórias: 17 | Empates: 11 | Derrotas: 10 | Aproveitamento: 59%");
+
          
             LstHistorico.Items.Add("2023: Marrocos 2x1 Brasil");
             LstHistorico.Items.Add("2023: Brasil 4x1 Guiné");
@@ -186,7 +191,7 @@ namespace Projeto_Idade_1
 
         private void VisualizarSubstituicoes()
         {
-            //Limpar();
+            Limpar();
             MessageBox.Show("Em desenvolvimento, Por favor aguardar");
         }
 

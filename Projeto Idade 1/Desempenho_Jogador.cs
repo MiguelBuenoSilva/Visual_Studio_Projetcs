@@ -20,6 +20,8 @@ namespace Projeto_Idade_1
 
 		private void btnVerificar_Click(object sender, EventArgs e)
 		{
+			string nome = txtNome.Text;
+			string posicao = cmbPosicao.Text;
 			int gols = (int)numGols.Value;
 			int assistencia = (int)numAssistencia.Value;
 			int jogos = int.Parse(txtPartidas.Text);
@@ -30,7 +32,7 @@ namespace Projeto_Idade_1
 
 			string classificacao = CalcularClassificacao(media);
 
-            lstAvaliados.Items.Add(media + " Classificação| " + classificacao);
+            lstAvaliados.Items.Add("Nome| " + nome + "Posição| "+ posicao +" Classificação| " + classificacao);
 
             ConvocacaoJogador(media, gols);
 

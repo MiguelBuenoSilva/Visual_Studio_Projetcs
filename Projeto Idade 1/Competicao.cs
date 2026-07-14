@@ -45,7 +45,7 @@ namespace Projeto_Idade_1
                     return LblCampeonatos.Text = resultado;
                     
                 case 4:
-                    resultado = "Copa do Mundo: é uma competição de\n futebol realizada pela Federação Internacional de Futebol\n\r (Fifa) a cada quatro anos.";
+                    resultado = "Copa do Mundo: é uma competição de\nfutebol realizada pela Federação Internacional de Futebol\n(Fifa) a cada quatro anos.";
 
                     pictureBox1.Image = Properties.Resources.Copadomundo;
                     return LblCampeonatos.Text = resultado;
